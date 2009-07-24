@@ -1,0 +1,22 @@
+{
+   "resources" : {
+      "repository" : "http://git.thegrebs.com/git/WebService-MobileMe"
+   },
+   "generated_by" : "Dist::Zilla::Plugin::MetaJSON version 1.091940",
+   "meta-spec" : {
+      "version" : 1.4,
+      "url" : "http://module-build.sourceforge.net/META-spec-v1.4.html"
+   },
+   "version" : "0.001",
+   "name" : "WebService-MobileMe",
+   "author" : [
+      "Michael Greb <michael@thegrebs.com>"
+   ],
+   "license" : "perl",
+   "requires" : {
+      "Test::More" : 0,
+      "WWW::Mechanize" : 0,
+      "JSON" : "2.00"
+   },
+   "abstract" : "access MobileMe iPhone stuffs from Perl"
+}
