@@ -2,7 +2,7 @@ NAME
     WebService::MobileMe - access MobileMe iPhone stuffs from Perl
 
 VERSION
-    version 0.001
+    version 0.002
 
 SYNOPSIS
         use WebService::MobileMe;
@@ -36,7 +36,8 @@ METHODS
     login.
 
     The constructor logs in to Mobile Me and retrieves the first device on
-    the account, storing it for use in the other methods.
+    the account, storing it for use in the other methods. If something
+    fails, it will return undef.
 
   "locate"
         my $location = $mme->locate();

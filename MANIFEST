@@ -10,3 +10,5 @@ dist.ini
 lib/WebService/MobileMe.pm
 scripts/sample.pl
 t/01-load.t
+t/release-pod-coverage.t
+t/release-pod-syntax.t
