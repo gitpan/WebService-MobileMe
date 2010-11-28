@@ -2,21 +2,54 @@
 use strict;
 use warnings;
 
-use ExtUtils::MakeMaker;
 
-WriteMakefile(
-  DISTNAME  => 'WebService-MobileMe',
-  NAME      => 'WebService::MobileMe',
-  AUTHOR    => "Michael\ Greb\ \<michael\@thegrebs\.com\>",
-  ABSTRACT  => "access\ MobileMe\ iPhone\ stuffs\ from\ Perl",
-  VERSION   => '0.002',
-  EXE_FILES => [ qw() ],
-  (eval { ExtUtils::MakeMaker->VERSION(6.31) } ? (LICENSE => 'perl') : ()),
-  PREREQ_PM    => {
-    "Test::More" => '0',
-    "WWW::Mechanize" => '0',
-    "JSON" => '2.00',
+
+use ExtUtils::MakeMaker 6.31;
+
+
+
+my %WriteMakefileArgs = (
+  'ABSTRACT' => 'access MobileMe iPhone stuffs from Perl',
+  'AUTHOR' => 'Michael Greb <michael@thegrebs.com>',
+  'BUILD_REQUIRES' => {
+    'Test::More' => '0'
   },
-  test => {TESTS => 't/*.t'}
+  'CONFIGURE_REQUIRES' => {
+    'ExtUtils::MakeMaker' => '6.31'
+  },
+  'DISTNAME' => 'WebService-MobileMe',
+  'EXE_FILES' => [],
+  'LICENSE' => 'perl',
+  'NAME' => 'WebService::MobileMe',
+  'PREREQ_PM' => {
+    'JSON' => '2.00',
+    'LWP::UserAgent' => '0',
+    'MIME::Base64' => '0'
+  },
+  'VERSION' => '0.003',
+  'test' => {
+    'TESTS' => 't/*.t'
+  }
 );
+
+
+unless ( eval { ExtUtils::MakeMaker->VERSION(6.56) } ) {
+  my $br = delete $WriteMakefileArgs{BUILD_REQUIRES};
+  my $pp = $WriteMakefileArgs{PREREQ_PM};
+  for my $mod ( keys %$br ) {
+    if ( exists $pp->{$mod} ) {
+      $pp->{$mod} = $br->{$mod} if $br->{$mod} > $pp->{$mod};
+    }
+    else {
+      $pp->{$mod} = $br->{$mod};
+    }
+  }
+}
+
+delete $WriteMakefileArgs{CONFIGURE_REQUIRES}
+  unless eval { ExtUtils::MakeMaker->VERSION(6.52) };
+
+WriteMakefile(%WriteMakefileArgs);
+
+
 
