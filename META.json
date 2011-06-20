@@ -4,7 +4,7 @@
       "Michael Greb <michael@thegrebs.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.102345, CPAN::Meta::Converter version 2.102400",
+   "generated_by" : "Dist::Zilla version 4.200007, CPAN::Meta::Converter version 2.110930",
    "license" : [
       "perl_5"
    ],
@@ -16,7 +16,7 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.31"
+            "ExtUtils::MakeMaker" : "6.30"
          }
       },
       "runtime" : {
@@ -39,6 +39,6 @@
          "url" : "http://git.thegrebs.com/git/WebService-MobileMe"
       }
    },
-   "version" : "0.003"
+   "version" : "0.004"
 }
 

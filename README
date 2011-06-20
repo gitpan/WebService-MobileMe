@@ -2,7 +2,7 @@ NAME
     WebService::MobileMe - access MobileMe iPhone stuffs from Perl
 
 VERSION
-    version 0.003
+    version 0.004
 
 SYNOPSIS
         use WebService::MobileMe;
