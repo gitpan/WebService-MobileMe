@@ -9,26 +9,28 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'access MobileMe iPhone stuffs from Perl',
-  'AUTHOR' => 'Michael Greb <michael@thegrebs.com>',
-  'BUILD_REQUIRES' => {
-    'Test::More' => '0'
+  "ABSTRACT" => "access MobileMe iPhone stuffs from Perl",
+  "AUTHOR" => "Michael Greb <michael\@thegrebs.com>",
+  "BUILD_REQUIRES" => {
+    "Test::More" => 0
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.30'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'WebService-MobileMe',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'WebService::MobileMe',
-  'PREREQ_PM' => {
-    'JSON' => '2.00',
-    'LWP::UserAgent' => '0',
-    'MIME::Base64' => '0'
+  "DISTNAME" => "WebService-MobileMe",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "WebService::MobileMe",
+  "PREREQ_PM" => {
+    "JSON" => "2.00",
+    "LWP::UserAgent" => 0,
+    "MIME::Base64" => 0,
+    "strict" => 0,
+    "warnings" => 0
   },
-  'VERSION' => '0.004',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.005",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 

@@ -4,7 +4,7 @@
       "Michael Greb <michael@thegrebs.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.200007, CPAN::Meta::Converter version 2.110930",
+   "generated_by" : "Dist::Zilla version 4.300002, CPAN::Meta::Converter version 2.112621",
    "license" : [
       "perl_5"
    ],
@@ -23,7 +23,9 @@
          "requires" : {
             "JSON" : "2.00",
             "LWP::UserAgent" : 0,
-            "MIME::Base64" : 0
+            "MIME::Base64" : 0,
+            "strict" : 0,
+            "warnings" : 0
          }
       },
       "test" : {
@@ -39,6 +41,6 @@
          "url" : "http://git.thegrebs.com/git/WebService-MobileMe"
       }
    },
-   "version" : "0.004"
+   "version" : "0.005"
 }
 
