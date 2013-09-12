@@ -1,14 +1,14 @@
+Build.PL
 Changes
 LICENSE
 MANIFEST
 META.json
 META.yml
-Makefile.PL
 README
 TODO
 dist.ini
 lib/WebService/MobileMe.pm
 scripts/sample.pl
 t/01-load.t
-t/release-pod-coverage.t
+t/release-kwalitee.t
 t/release-pod-syntax.t

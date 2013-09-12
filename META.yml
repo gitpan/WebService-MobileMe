@@ -2,23 +2,31 @@
 abstract: 'access MobileMe iPhone stuffs from Perl'
 author:
   - 'Michael Greb <michael@thegrebs.com>'
-build_requires:
-  Test::More: 0
+build_requires: {}
 configure_requires:
-  ExtUtils::MakeMaker: 6.30
+  Module::Build::Tiny: 0.026
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300002, CPAN::Meta::Converter version 2.112621'
+generated_by: 'Dist::Milla version v1.0.4, Dist::Zilla version 4.300038, CPAN::Meta::Converter version 2.131560'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: WebService-MobileMe
-requires:
-  JSON: 2.00
-  LWP::UserAgent: 0
-  MIME::Base64: 0
-  strict: 0
-  warnings: 0
+no_index:
+  directory:
+    - t
+    - xt
+    - inc
+    - share
+    - eg
+    - examples
 resources:
-  repository: http://git.thegrebs.com/git/WebService-MobileMe
-version: 0.005
+  bugtracker: https://github.com/mikegrb/WebService-MobileMe/issues
+  homepage: https://github.com/mikegrb/WebService-MobileMe
+  repository: https://github.com/mikegrb/WebService-MobileMe.git
+version: 0.006
+x_contributors:
+  - 'Michael Greb <mgreb@linode.com>'
+  - 'Mike Greb <mgreb@linode.com>'
+  - 'Rev Michael Greb <michael@thegrebs.com>'
+  - 'mikegrb <mgreb@linode.com>'
