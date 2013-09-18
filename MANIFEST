@@ -6,6 +6,7 @@ META.json
 META.yml
 README
 TODO
+cpanfile
 dist.ini
 lib/WebService/MobileMe.pm
 scripts/sample.pl
